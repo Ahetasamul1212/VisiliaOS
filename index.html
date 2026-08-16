@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisiliaOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+    <!-- icon.png -->
+    
+    <script src="https://kit.fontawsome.com/8087219881.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Apps con and taskbar -->
+    <div class="br-os-container">
+        <div id="br-os-apps">
+            <div class="app">
+                <img src="images/filemanager.png" alt="File Manager">
+                <p>File Manager</p>
+            </div>
+        </div>
+        <div id="taskbar">
+
+        </div>
+    </div>
+
+    <!-- App Window -->
+
+    <div class="br-os-window" draggable="true">
+        <!-- top window -->
+         <div class="window-bar">
+            <!-- icon -->
+                <div class="brand">
+                    <img src="images/filemanager.png" alt="File Manager">
+                    <p>File Manager</p>
+                </div>
+                <!-- option buttons -->
+                <div class="buttons">
+                    <!-- Maximizer -->
+                    <button id="maximise">
+                        <i class="fa fa-window-maximaise"></i>
+                    </button>
+                    <!-- Minimizer -->
+                    <button id="shorter">
+                        <i class="fa fa-window-restore"></i>
+                    </button>
+                    <!-- Closer -->
+                    <button id="cross">
+                        <i class="fa fa-window-times"></i>
+                    </button>
+                </div>
+
+         </div>
+
+         <!-- Main app -->
+          <div class="app" id="app-main">
+
+        </div>
+
+    </div>
+    <!-- Hide-App -->
+    <div id="app-hide">
+
+    </div>
+
+    <nav id="os-ct-menu">
+        <ul>
+            <li><a href="javascript:;">Open</a></li>
+            <li><a href="javascript:;">Open as Administrator</a></li>
+            <li><a href="javascript:;">Remove</a></li>
+            <li><a href="javascript:;">Properties</a></li>
+        </ul>
+    </nav>
+
+    <!-- script -->
+    <script src="backend/script.js"></script>
+
+</body>
+</html>
